@@ -1,7 +1,9 @@
 import { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-
-/* ---------- Данные ---------- */
+import main from "./../../../assets/shukrullo/forcosms/1111.jpg"
+import model from "./../../../assets/shukrullo/forcosms/trainerPhoto.jpg"
+import yak from "./../../../../public/images/sales/article-3.jpg"
+import du from "./../../../../public/images/sales/article-1.jpg"
 
 const courses = [
   {
@@ -104,11 +106,11 @@ const specials = [
 ];
 
 const trainingCards = [
-  { title: "КУРСЫ КОСМЕТОЛОГИИ", lines: ["- эстетическая косметология", "- инъекционная косметология", "- лазерная косметология"], image: "https://picsum.photos/seed/train1/500/500", big: true },
-  { title: "ОНЛАЙН ОБУЧЕНИЕ", image: "https://picsum.photos/seed/train2/500/500" },
-  { title: "МАСТЕР-КЛАССЫ", image: "https://picsum.photos/seed/train3/400/300" },
-  { title: "РАСПИСАНИЕ", image: "https://picsum.photos/seed/train4/400/300", light: true },
-  { title: "АКЦИИ", image: "https://picsum.photos/seed/train5/400/300" },
+  { title: "КУРСЫ КОСМЕТОЛОГИИ", lines: ["- эстетическая косметология", "- инъекционная косметология", "- лазерная косметология"], image: yak, big: true },
+  { title: "ОНЛАЙН ОБУЧЕНИЕ", image: du },
+  { title: "МАСТЕР-КЛАССЫ", image: main  },
+  { title: "РАСПИСАНИЕ", image: du, light: true },
+  { title: "АКЦИИ", image: yak },
 ];
 
 const whyUs = [
@@ -268,7 +270,7 @@ export default function HomePage() {
           </div>
           <div className="relative h-72 md:h-96">
             <img
-              src="https://picsum.photos/seed/hero/700/500"
+              src={main}
               alt="Косметологи"
               className="w-full h-full object-cover rounded-2xl"
             />
@@ -374,7 +376,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ВЕДЕМ НАБОР МОДЕЛЕЙ */}
       <section className="px-4 md:px-10 py-16 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div>
           <h2 className="text-2xl md:text-3xl font-bold mb-6">ВЕДЕМ НАБОР МОДЕЛЕЙ</h2>
@@ -391,7 +392,7 @@ export default function HomePage() {
           </button>
         </div>
         <img
-          src="https://picsum.photos/seed/model2/700/500"
+          src={model}
           alt="Процедура"
           className="w-full h-80 object-cover rounded-2xl"
         />
@@ -428,7 +429,6 @@ export default function HomePage() {
         />
       </section>
 
-      {/* ПОЧЕМУ МЫ */}
       <section className="px-4 md:px-10 py-16 max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">Почему мы</h2>
         <div className="grid md:grid-cols-3 gap-6">
@@ -448,7 +448,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ */}
       <section className="px-4 md:px-10 py-16 max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">Специальные предложения</h2>
         <Carousel
@@ -475,7 +474,6 @@ export default function HomePage() {
         />
       </section>
 
-      {/* ФОРМА ОБРАТНОГО ЗВОНКА */}
       <section ref={formRef} className="px-4 md:px-10 py-16 max-w-2xl mx-auto text-center scroll-mt-8">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">Закажите обратный звонок</h2>
         <p className="text-gray-500 mb-8">Оставьте заявку в форме и наш менеджер свяжется с вами</p>
