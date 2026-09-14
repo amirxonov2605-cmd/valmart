@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
+
 import Layout from '../layout/Layout';
 import Home from './Home/Home';
 import Courses from './Courses/Courses';
 import ForCosms from './forCosms/ForCosms';
-import Lessons from './Lessons/Lessons';
 import Sales from './Sales/Sales';
 import Center from './Center/Center';
 import Schedule from './Schedule/Schedule';
@@ -17,16 +17,17 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="Courses" element={<Courses />} />
-        <Route path="ForCosms" element={<ForCosms />} />
-        <Route path="Lessons" element={<Lessons />} />
-        <Route path="Sales" element={<Sales />} />
-        <Route path="Center" element={<Center />} />
-        <Route path='Schedule' element={<Schedule />} />
-        <Route path='Price' element={<Price />} />
-        <Route path='Special' element={<SpecialPrice />} />
-        <Route path='Articles' element={<Articles />} />
-        <Route path='*' element={<ErrorPage />} />
+
+        <Route path="courses" element={<Courses />} />
+        <Route path="for-cosms" element={<ForCosms />} />
+        <Route path="sales" element={<Sales />} />
+        <Route path="center" element={<Center />} />
+        <Route path="schedule" element={<Schedule />} />
+        <Route path="price" element={<Price />} />
+        <Route path="special" element={<SpecialPrice />} />
+        <Route path="articles" element={<Articles />} />
+
+        <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>
   );

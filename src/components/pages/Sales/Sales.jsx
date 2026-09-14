@@ -3,7 +3,7 @@ import { flushSync } from 'react-dom';
 
 const articles = Array(6).fill(null).map((_, i) => ({
     id: i,
-    image: `/images/sales/article-${i + 1}.jpg`,
+    image: `public/images/sales/article-${i + 1}.jpg`,
     title: "Актуальна ли мезотерапия в коррекции шеи, декольте, кистей рук и какие существуют альтернативы?"
 }));
 
