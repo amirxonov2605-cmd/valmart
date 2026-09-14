@@ -1,0 +1,1297 @@
+.mainContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heroTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.heroSubtitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 16px;
+}
+
+.subtitleBirdIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  z-index: 100;
+  min-width: 240px;
+  padding: 8px 0;
+}
+
+.dropdownItem {
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdownItem:hover {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.activeDropdownItem {
+  background: #f1f5f9;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.tab {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  color: #64748b;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  border-color: #cbd5e1;
+}
+
+.activeTab {
+  background-color: #1e293b;
+  color: #ffffff;
+  border-color: #1e293b;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #f1f5f9;
+  position: relative;
+}
+
+.cardTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.category {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cardHeaderBirdIcon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.videoTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 16px 0 8px 0;
+  line-height: 1.3;
+}
+
+.speakerText {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0 0 20px 0;
+}
+
+.badgeWrapper {
+  margin-bottom: 12px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.purpleTheme .badge {
+  background-color: #ede9fe;
+  color: #5b53d4;
+}
+
+.greenTheme .badge {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.tealTheme .badge {
+  background-color: #ccfbf1;
+  color: #0d9488;
+}
+
+.date {
+  font-size: 15px;
+  color: #475569;
+  margin: 0 0 16px 0;
+  font-weight: 500;
+}
+
+.contentBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.descriptionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.8;
+  flex: 1;
+}
+
+.modelContainer {
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.mannequinImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 16px;
+}
+
+.footerInfo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.actionsStacked {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.purpleTheme .btnRegister,
+.purpleTheme.modalBtnPrimary {
+  background-color: #5b53d4;
+}
+
+.greenTheme .btnRegister,
+.greenTheme.modalBtnPrimary {
+  background-color: #16a34a;
+}
+
+.tealTheme .btnRegister,
+.tealTheme.modalBtnPrimary {
+  background-color: #0d9488;
+}
+
+.btnRegister {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btnRegister:hover {
+  opacity: 0.9;
+}
+
+.purpleTheme .btnDetails {
+  background-color: #ede9fe;
+  color: #5b53d4;
+}
+
+.greenTheme .btnDetails {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.tealTheme .btnDetails {
+  background-color: #ccfbf1;
+  color: #0d9488;
+}
+
+.btnDetails {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btnDetails:hover {
+  opacity: 0.9;
+}
+
+.videoPreviewContainer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+
+.youtubeIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.pageNumber, .pageArrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #1e293b;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.activePage {
+  background: #16a34a;
+  color: #ffffff;
+  border-color: #16a34a;
+}
+
+.pageNumber:hover:not(.activePage), .pageArrow:hover:not(:disabled) {
+  border-color: #cbd5e1;
+}
+
+.pageArrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modalContent {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modalClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #64748b;
+}
+
+.modalBadge {
+  font-size: 12px;
+  color: #16a34a;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modalTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 8px 0;
+}
+
+.modalSubtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.modalPrice {
+  font-size: 16px;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.modalText {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.modalProgramList {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.modalProgramList h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.modalProgramList ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formGroup label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.formGroup input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.formGroup input:focus {
+  border-color: #16a34a;
+}
+
+.cardRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.modalBtnPrimary {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background-color: #16a34a; /* Дефолтный цвет */
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.modalBtnPrimary:hover {
+  opacity: 0.9;
+}
+
+.successBox {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.successIcon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.paymentMethodsTabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.payTabBtn {
+  padding: 8px 4px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.activePayTab {
+  background: #dcfce7;
+  color: #16a34a;
+  border-color: #16a34a;
+}
+
+.digitalWalletsContainer {
+  padding: 10px 0;
+}
+
+.walletHint {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.walletButtonsRow {
+  display: flex;
+  gap: 10px;
+}
+
+.applePayButton, .googlePayButton {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  background: #000000;
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.googlePayButton {
+  background: #ffffff;
+  color: #3c4043;
+  border: 1px solid #dadce0;
+}
+
+.gText {
+  color: #4285f4;
+  font-weight: 700;
+}
+
+.installmentsBox {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.5;
+}
+.purpleTheme .title {
+  color: #5b53d4;
+}
+
+.greenTheme .title {
+  color: #16a34a;
+}
+
+.tealTheme .title {
+  color: #0d9488;
+}
+.tabsContainer {
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+  position: relative;
+  width: 100%;
+}
+
+.tabsRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tabBtn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.tabBtn:hover {
+  border-color: #94a3b8;
+  background: #f8fafc;
+}
+
+/* Активная темная кнопка "Все направления" */
+.tabActiveDark {
+  background: #1e293b !important;
+  color: #ffffff !important;
+  border-color: #1e293b !important;
+  font-weight: 600;
+}
+
+/* Состояние остальных активных кнопок */
+.tabActiveOutline {
+  border-color: #94a3b8;
+  background: #ffffff;
+}
+
+.dropdownWrapperDesktop {
+  position: relative;
+}
+
+.arrowIcon {
+  font-size: 10px;
+  color: #64748b;
+  transition: transform 0.2s;
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}
+
+/* Выпадающий список подкатегорий */
+.desktopDropdownList {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 260px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  z-index: 50;
+  overflow: hidden;
+}
+
+.desktopDropdownItem {
+  padding: 12px 18px;
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.2s, color 0.2s;
+}
+
+.desktopDropdownItem:last-child {
+  border-bottom: none;
+}
+
+.desktopDropdownItem:hover {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.activeSubItem {
+  background: #f1f5f9;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* Адаптивность для мобильных экранов */
+@media (max-width: 768px) {
+  .tabsRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .tabBtn {
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .desktopDropdownList {
+    position: static;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: #f8fafc;
+  }
+}.tabsContainer {
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+  position: relative;
+  width: 100%;
+}
+
+/* Общая рамка-контейнер для всей панели навигации */
+.tabsRow {
+  display: flex;
+  align-items: stretch;
+  background: #ffffff;
+  border: 1px solid #bbf7d0; /* Тонкая зеленая рамка вокруг блока */
+  border-radius: 4px;
+  overflow: visible;
+}
+
+.tabBtn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #bbf7d0; /* Разделительные линии между вкладками */
+  padding: 16px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #475569;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  outline: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tabBtn:last-child {
+  border-right: none;
+}
+
+.tabBtn:hover {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+/* Светло-зеленый фон для активной вкладки */
+.tabActiveDark,
+.tabActiveOutline {
+  background: #dcfce7 !important; /* Светло-зеленый фон как на картинке */
+  color: #16a34a !important;     /* Зеленый цвет текста */
+  font-weight: 600;
+}
+
+.dropdownWrapperDesktop {
+  position: relative;
+  flex: 1;
+  display: flex;
+}
+
+.arrowIcon {
+  font-size: 10px;
+  color: #16a34a;
+  transition: transform 0.2s;
+  display: none; /* В дизайне со скриншота стрелочки нет, но можно оставить при желании */
+}
+
+/* Выпадающий список подкатегорий (с рамкой под вкладкой) */
+.desktopDropdownList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 240px;
+  background: #ffffff;
+  border: 1px solid #bbf7d0;
+  border-top: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  z-index: 50;
+  overflow: hidden;
+}
+
+.desktopDropdownItem {
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.2s, color 0.2s;
+}
+
+.desktopDropdownItem:last-child {
+  border-bottom: none;
+}
+
+.desktopDropdownItem:hover {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.activeSubItem {
+  background: #f0fdf4;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* Адаптивность для мобильных экранов */
+@media (max-width: 768px) {
+  .tabsRow {
+    flex-direction: column;
+    border: none;
+  }
+  
+  .tabBtn {
+    border-right: none;
+    border-bottom: 1px solid #bbf7d0;
+    justify-content: space-between;
+  }
+
+  .desktopDropdownList {
+    position: static;
+    box-shadow: none;
+    border: none;
+    background: #f8fafc;
+  }
+}.tabBtn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #bbf7d0; /* Разделительные линии между вкладками */
+  border-radius: 0; /* Убираем скругления у внутренних кнопок */
+  padding: 16px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #475569;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  outline: none;
+  text-align: center;
+  white-space: nowrap;
+}
+/* =========================================================
+   БЛОК АНИМАЦИЙ — добавлено для выделения проекта
+   ========================================================= */
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+@keyframes popIn {
+  0%   { opacity: 0; transform: scale(0.8); }
+  70%  { opacity: 1; transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounceIn {
+  0%   { opacity: 0; transform: scale(0.2) rotate(-15deg); }
+  60%  { opacity: 1; transform: scale(1.25) rotate(5deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25%      { transform: rotate(-10deg); }
+  75%      { transform: rotate(10deg); }
+}
+
+@keyframes dropdownSlide {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes urgentPulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5); }
+  50%      { opacity: 0.55; box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Уважение к пользователям с "reduce motion" */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* --- Hero --- */
+.heroTitle {
+  animation: fadeInDown 0.7s ease both;
+}
+
+.heroSubtitleContainer {
+  animation: fadeInUp 0.7s 0.15s ease both;
+}
+
+.subtitleBirdIcon {
+  display: inline-block;
+  animation: wiggle 2.4s ease-in-out infinite;
+}
+
+/* --- Табы --- */
+.tabsContainer {
+  animation: fadeIn 0.5s ease both;
+  position: relative;
+  z-index: 30;
+}
+
+.tabBtn {
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.tabBtn:hover {
+  transform: translateY(-2px);
+}
+
+.tabBtn:active {
+  transform: translateY(0) scale(0.96);
+}
+
+.tabActiveDark,
+.tabActiveOutline {
+  animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.desktopDropdownList {
+  animation: dropdownSlide 0.25s ease both;
+  transform-origin: top center;
+}
+
+.desktopDropdownItem {
+  transition: background 0.2s, color 0.2s, transform 0.2s, padding-left 0.2s;
+}
+
+.desktopDropdownItem:hover {
+  transform: translateX(4px);
+}
+
+/* --- Карточки --- */
+.card {
+  animation: fadeInUp 0.55s ease both;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+  will-change: transform;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.015);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border-color: #e2e8f0;
+}
+
+.cardHeaderBirdIcon {
+  transition: transform 0.4s ease;
+}
+
+.card:hover .cardHeaderBirdIcon {
+  transform: rotate(18deg) scale(1.15);
+}
+
+/* --- Манекен: "дыхание" + 3D-наклон + эффект AI-сканирования лица --- */
+.modelContainer {
+  position: relative;
+  animation: floatY 3.2s ease-in-out infinite;
+}
+
+.mannequinImage {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.18s ease-out, filter 0.18s ease-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* Светящаяся аура вокруг головы, пульсирует всегда */
+.modelGlow {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(22, 163, 74, 0.28) 0%, rgba(22, 163, 74, 0) 70%);
+  animation: glowPulse 2.6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.purpleTheme .modelGlow {
+  background: radial-gradient(circle, rgba(91, 83, 212, 0.28) 0%, rgba(91, 83, 212, 0) 70%);
+}
+
+.tealTheme .modelGlow {
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.28) 0%, rgba(13, 148, 136, 0) 70%);
+}
+
+@keyframes glowPulse {
+  0%, 100% { transform: scale(0.88); opacity: 0.45; }
+  50%      { transform: scale(1.18); opacity: 1; }
+}
+
+/* Линия сканирования лица (эффект "AI-диагностика кожи") */
+.scanLine {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 8%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #16a34a, transparent);
+  box-shadow: 0 0 10px 1px rgba(22, 163, 74, 0.85);
+  animation: scanMove 2.4s ease-in-out infinite;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.purpleTheme .scanLine {
+  background: linear-gradient(90deg, transparent, #5b53d4, transparent);
+  box-shadow: 0 0 10px 1px rgba(91, 83, 212, 0.85);
+}
+
+.tealTheme .scanLine {
+  background: linear-gradient(90deg, transparent, #0d9488, transparent);
+  box-shadow: 0 0 10px 1px rgba(13, 148, 136, 0.85);
+}
+
+.card:hover .scanLine {
+  opacity: 1;
+}
+
+@keyframes scanMove {
+  0%   { top: 8%; }
+  50%  { top: 88%; }
+  100% { top: 8%; }
+}
+
+/* Уголки-рамка сканера, как в приборах диагностики кожи */
+.scanFrame {
+  position: absolute;
+  inset: 2px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .scanFrame {
+  opacity: 1;
+}
+
+.scanCorner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #16a34a;
+}
+
+.purpleTheme .scanCorner { border-color: #5b53d4; }
+.tealTheme .scanCorner { border-color: #0d9488; }
+
+.scanCornerTL { top: 0; left: 0; border-right: none; border-bottom: none; }
+.scanCornerTR { top: 0; right: 0; border-left: none; border-bottom: none; }
+.scanCornerBL { bottom: 0; left: 0; border-right: none; border-top: none; }
+.scanCornerBR { bottom: 0; right: 0; border-left: none; border-top: none; }
+
+/* Мелкие точки-маркеры "анализа зон", вспыхивают по очереди при наведении */
+.scanDot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #16a34a;
+  box-shadow: 0 0 6px 1px rgba(22, 163, 74, 0.9);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.purpleTheme .scanDot { background: #5b53d4; box-shadow: 0 0 6px 1px rgba(91, 83, 212, 0.9); }
+.tealTheme .scanDot { background: #0d9488; box-shadow: 0 0 6px 1px rgba(13, 148, 136, 0.9); }
+
+.card:hover .scanDot {
+  animation: dotBlink 1.6s ease-in-out infinite;
+}
+
+.scanDot1 { top: 28%; left: 30%; animation-delay: 0s !important; }
+.scanDot2 { top: 40%; right: 22%; animation-delay: 0.35s !important; }
+.scanDot3 { bottom: 30%; left: 40%; animation-delay: 0.7s !important; }
+
+@keyframes dotBlink {
+  0%, 100% { opacity: 0; transform: scale(0.6); }
+  50%      { opacity: 1; transform: scale(1.3); }
+}
+
+/* --- Видео-превью --- */
+.videoPreviewContainer {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover .videoPreviewContainer {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* --- Индикатор дефицита мест --- */
+.footerInfoUrgent {
+  color: #ef4444 !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.urgentDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ef4444;
+  display: inline-block;
+  animation: urgentPulse 1.4s ease-in-out infinite;
+}
+
+/* --- Кнопки --- */
+.btnRegister,
+.modalBtnPrimary {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s;
+}
+
+.btnRegister::after,
+.modalBtnPrimary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.btnRegister:hover::after,
+.modalBtnPrimary:hover::after {
+  left: 125%;
+}
+
+.btnRegister:hover,
+.modalBtnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.btnRegister:active,
+.modalBtnPrimary:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.btnDetails {
+  transition: transform 0.2s ease, opacity 0.2s;
+}
+
+.btnDetails:hover {
+  transform: translateY(-2px);
+}
+
+.btnDetails:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* --- Пагинация --- */
+.pageNumber,
+.pageArrow {
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.pageNumber:hover:not(.activePage),
+.pageArrow:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.08);
+}
+
+.activePage {
+  animation: popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* --- Модалки --- */
+.modalOverlay {
+  animation: fadeIn 0.25s ease both;
+}
+
+.modalContent {
+  animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.modalClose {
+  transition: transform 0.3s ease, color 0.2s ease;
+}
+
+.modalClose:hover {
+  transform: rotate(90deg) scale(1.15);
+  color: #ef4444;
+}
+
+.successIcon {
+  display: inline-block;
+  animation: bounceIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both, wiggle 2s ease-in-out 0.6s infinite;
+}
+
+.formGroup input {
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.formGroup input:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.15);
+}
+
+/* --- Оплата --- */
+.payTabBtn {
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.payTabBtn:hover {
+  transform: translateY(-2px);
+}
+
+.activePayTab {
+  animation: popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.applePayButton,
+.googlePayButton {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.applePayButton:hover,
+.googlePayButton:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.applePayButton:active,
+.googlePayButton:active {
+  transform: translateY(0) scale(0.97);
+}
