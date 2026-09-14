@@ -4,7 +4,7 @@ import { HiOutlinePhone, HiChevronDown, HiMenu, HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const navLinks = [
-  { to: "/Courses", label: "Главная" },
+  { to: "/", label: "Главная" },
   { to: "/Courses", label: "Курсы обучения" },
   { to: "/ForCosms", label: "Вебинары" },
   { to: "/Articles", label: "Блог" },
